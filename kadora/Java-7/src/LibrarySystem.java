@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 
 
 
-public class Book {
+class Book {
     private String title;
     private String author;
 
@@ -73,7 +73,7 @@ public class LibrarySystem {
 }
 
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         LibrarySystem library = new LibrarySystem();
