@@ -9,6 +9,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.nio.file.Paths;
 
+
+
+public class Book {
+    private String title;
+    private String author;
+
+    public Book(String title,String author){
+        this.title = title;
+        this.author = author;
+    }
+    
+    public String getTitle(){
+        return title;
+    }
+
+    public String getAuthor(){
+        return author;
+    }
+
+    @Override 
+    public String toString(){
+        return "タイトル: " + title + " / 著者: " + author;
+    }
+}
+
 public class LibrarySystem {
     
     public List<Book> books = new ArrayList<>();
@@ -46,3 +71,20 @@ public class LibrarySystem {
     return value;
 }
 }
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        LibrarySystem library = new LibrarySystem();
+        
+        library.addBook("羅生門","芥川龍之介");
+        library.addBook("君死に給うことなかれ","与謝野晶子");
+        library.addBook("それから","夏目漱石");
+        library.addBook("銀河鉄道の夜","宮沢賢治");
+
+        library.allBooks();
+        library.saveToCsv("BookCsv");
+    }
+}
+
