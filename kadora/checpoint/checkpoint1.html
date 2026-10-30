@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+    --main-color: blueviolet;
+    --hover-color: red;
+}
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .card{
+            width: 50px;
+            height: 50px;
+            color: aqua;
+            border: 5px solid black;
+            margin: auto;
+            box-shadow: 8px 8px 1px var(--main-color);
+            transition: box-shadow 1s;
+        }
+
+        .card:hover{
+            box-shadow: 5px 3px 1px var(--hover-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Kadore</h1>
+        <ul>
+            <li><a href="#">kadora</a></li>
+            <li><a href="#">kadora</a></li>
+            <li><a href="#">kadora</a></li>
+        </ul>
+    </header>
+    <main class="card-grid">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </main>
+</body>
+</html>
