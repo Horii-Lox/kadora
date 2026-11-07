@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+
+        .flex-inner{
+            padding: 20px;
+        }
+        
+        @media(min-width: 768px){
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+    
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+<header></header>
+<main>
+    <div class="flex-container">
+        <p class="flex-inner">レスポンシブデザイン</p>
+        <p class="flex-inner">レスポンシブデザイン</p>
+    </div>
+</main>
+<footer></footer>
+
+</body>
+</html>
