@@ -17,7 +17,7 @@
             --text-m-size:20px;
             --text-l-size:25px;
         }
-        html{
+        body{
             width: 100%;
             max-width: 1200px;
             margin-left: auto;
@@ -34,13 +34,14 @@
             flex-direction: column;
             justify-content: space-between;
         }
+        .main-section article{
+            flex: 1;
+        }
         .title{
             color: var(--text-1-color);
         }
         .header-btn{
-            width: 50px;
-            height: 50px;
-            transition: background-color 0.3;
+            transition: background-color 0.2s;
         }
         .header-btn:hover{
             background-color: var(--btn-color);
@@ -76,7 +77,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="title"><a href="#" class="header-btn">卒業課題</a></h1>
+        <h1 class="title"><button class="header-btn">卒業課題</button></h1>
         <ul class="header-title">
             <li class="header-content">Sport article</li>
             <li class="header-content">Study article</li>
@@ -90,11 +91,11 @@
                 <h2>人気のスポーツ</h2>
                 <p class="article-text">内容内容内容内容.........</p>
             </article>
-            <article class="study-artcle">
+            <article class="study-article">
                 <h2>人気の教科</h2>
                 <p class="article-text">内容内容内容内容.........</p>
             </article>
-            <article class="study-artcle">
+            <article class="cafe-article">
                 <h2>人気の学食</h2>
                 <p class="article-text">内容内容内容内容.........</p>
             </article>
