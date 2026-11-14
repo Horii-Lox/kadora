@@ -26,12 +26,11 @@
         .header{
             background-color: var(--bg-color);
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
         }
         .main-section{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr;
             justify-content: space-between;
         }
         .main-section article{
@@ -64,13 +63,9 @@
             text-align: center;
         }
         @media (min-width: 768px){
-            .header{
-            display: flex;
-            flex-direction: row;
-            }
             .main-section{
-                display: flex;
-                flex-direction: row;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
