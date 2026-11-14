@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Document</title>
+ 
+    <style>
+        :root{
+            --main-color:#3b82f6;
+            --bg-color:#000558;
+            --text-1-color:#989898;
+            --text-2-color:#000000;
+
+            --text-s-size:15px;
+            --text-m-size:20px;
+            --text-l-size:25px;
+        }
+        html{
+            width: 100%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header{
+            background-color: var(--bg-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .main-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .title{
+            color: var(--text-1-color);
+        }
+        .header-content{
+            color: var(--text-1-color);
+            font-size: var(--text-m-size);
+        }
+        .main{
+            background-color: var(--main-color);
+            color: var(--text-2-color);
+        }
+        .article-text{
+            font-size: var(--text-s-size);
+        }
+        .footer{
+            font-size: var(--text-s-size);
+            background-color: var(--text-2-color);
+            color: var(--text-1-color);
+            text-align: center;
+        }
+        @media (min-width: 760px){
+            .header{
+            display: flex;
+            flex-direction: row;
+            }
+            .main-section{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">卒業課題</h1>
+        <ul class="header-title">
+            <li class="header-content">Sport article</li>
+            <li class="header-content">Study article</li>
+        </ul>
+    </header>
+    <main class="main">
+        
+        <section class="main-section">
+            <article class="sport-article">
+                <h2>人気のスポーツ</h2>
+                <p class="article-text">内容内容内容内容.........</p>
+            </article>
+            <article class="study-artcle">
+                <h2>人気の教科</h2>
+                <p class="article-text">内容内容内容内容.........</p>
+            </article>
+            <article class="study-artcle">
+                <h2>人気の学食</h2>
+                <p class="article-text">内容内容内容内容.........</p>
+            </article>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <h3>© KADRAinc</h3>
+    </footer>
+</body>
+</html>
